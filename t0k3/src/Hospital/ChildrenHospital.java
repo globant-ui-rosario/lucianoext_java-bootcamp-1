@@ -13,33 +13,11 @@ public class ChildrenHospital extends Hospital{
 		
 		
 	}
+
+	@Override
+	public String toString() {
+		return "ChildrenHospital [ageLimit=" + ageLimit + ", name=" + name + ", description=" + description + "]";
+	}
 	
-/*	public static class ChildrenHospitalBuilder extends Builder{
-		
-		private String name;
-		private String description;
-		private int ageLimit;
-		
-		public ChildrenHospitalBuilder ageLimit (int ageLimit){
-			this.ageLimit = ageLimit;
-			return this;
-			
-		}
-		
-		public ChildrenHospitalBuilder name(String name){
-			this.name = name;
-			return this;
-		}
-		
-		public ChildrenHospitalBuilder description(String description){
-			this.description = description;
-			return this;
-		}
-		
-		public ChildrenHospital Build(){
-			return new ChildrenHospital(this);
-		}
-		
-		
-	}*/
+
 }

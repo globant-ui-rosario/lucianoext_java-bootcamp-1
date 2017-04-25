@@ -1,5 +1,6 @@
 package building;
 
+import builders.StructureBuilder;
 
 public class Structure {
 
@@ -9,34 +10,16 @@ public class Structure {
 	public String toString() {
 		return "Structure [NFloors=" + NFloors + ", NBathrooms=" + NBathrooms + ", NBedrooms=" + NBedrooms + "]";
 	}
-
-	private Structure(Builder b){
-		this.NFloors = b.NFloors;
-		this.NBathrooms = b.NBathrooms;
-		this.NBedrooms =b.NBedrooms;
+	
+	public Structure(){
+		NFloors=NBathrooms=NBedrooms=0;
 	}
 	
-	public static class Builder{
-		 
-		private int NFloors,NBathrooms,NBedrooms;
-		
-		public Builder  NFloors(int  NFloors){
-			this. NFloors =  NFloors;
-			return this;
-		}
-		
-		public Builder NBathrooms(int NBathrooms){
-			this.NBathrooms = NBathrooms;
-			return this;
-		}
-		
-		public Builder NBedrooms(int NBedrooms){
-			this.NBedrooms = NBedrooms;
-			return this;
-		}
-		
-		public Structure build(){
-			return new Structure(this);
-		}
+	public Structure(StructureBuilder b){
+		this.NFloors = b.getNFloors();
+		this.NBathrooms = b.getNBathrooms();
+		this.NBedrooms =b.getNBedrooms();
 	}
+	
+
 }

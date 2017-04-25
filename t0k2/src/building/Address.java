@@ -1,5 +1,6 @@
 package building;
 
+import builders.AddressBuilder;
 
 public class Address {
 	private String street;
@@ -9,31 +10,16 @@ public class Address {
 	public String toString() {
 		return "Address [street=" + street + ", addressNumber=" + addressNumber + "]";
 	}
-
-	private Address(Builder b){
-		this.addressNumber = b.addressNumber;
-		this.street = b.street;
-		
-	}
+public Address(){
+	street=null;
+	addressNumber=0;
+}
 	
-	public static class Builder{
-		 
-		private String street;
-		private int addressNumber;
-		
-		public Builder street(String street){
-			this.street = street;
-			return this;
-		}
-		
-		public Builder address(int addressNumber){
-			this.addressNumber = addressNumber;
-			return this;
-		}
 
+	public Address(AddressBuilder b){
+		this.addressNumber = b.getAddressNumber();
+		this.street = b.getStreet();
 		
-		public Address build(){
-			return new Address(this);
-		}
 	}
+
 }

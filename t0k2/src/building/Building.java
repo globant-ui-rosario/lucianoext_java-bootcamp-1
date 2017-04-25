@@ -1,5 +1,7 @@
 package building;
 
+import builders.BuildingBuilder;
+
 public class Building {
 	private String classification;
 	private Address address;
@@ -10,35 +12,18 @@ public class Building {
 		return "Building [classification=" + classification + ", address=" + address + ", structure=" + structure + "]";
 	}
 
-	private Building(Builder b){
-		this.address = b.address;
-		this.classification = b.classification;
-		this.structure =b.structure;
+	public Building(){
+		classification=null;
+		address=null;
+		structure=null;
+				
 	}
 	
-	public static class Builder{
-		 
-		private String classification;
-		private Address address;
-		private Structure structure;
-		
-		public Builder classification(String classification){
-			this.classification = classification;
-			return this;
-		}
-		
-		public Builder address(Address address){
-			this.address = address;
-			return this;
-		}
-		
-		public Builder structure(Structure structure){
-			this.structure = structure;
-			return this;
-		}
-		
-		public Building build(){
-			return new Building(this);
-		}
+	public Building(BuildingBuilder b){
+		this.address = b.getAddress();
+		this.classification = b.getClassification();
+		this.structure =b.getStructure();
 	}
+	
+
 }

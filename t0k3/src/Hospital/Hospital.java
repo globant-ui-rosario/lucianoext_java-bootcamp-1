@@ -6,7 +6,7 @@ public abstract class Hospital {
 	protected String description;
 	@Override
 	public String toString() {
-		return "Hospital [name=" + name + ", description=" + description + "]";
+		return "Hospital [name=" + name  + "]";
 	}
 	
 	

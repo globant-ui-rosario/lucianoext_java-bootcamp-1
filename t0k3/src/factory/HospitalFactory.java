@@ -1,15 +1,15 @@
 package factory;
 
-import builders.Builder;
-import builders.ChildrenHospitalBuilder;
-import builders.MentalAsylumBuilder;
+import Hospital.ChildrenHospital;
+import Hospital.Hospital;
+import Hospital.MentalAsylum;
 
 public class HospitalFactory{
-	public Builder getBuilder(String type){
+	public Hospital getHospital(String type){
 		if ("Mental".equalsIgnoreCase(type)){
-			return new MentalAsylumBuilder();
+			return new MentalAsylum();
 		}else {
-			return new ChildrenHospitalBuilder();
+			return new ChildrenHospital();
 		}
 		
 	}

@@ -3,6 +3,7 @@ package app;
 import Hospital.Hospital;
 import factory.HospitalFactory;
 
+
 public class Demo {
 
 	public static void main(String[] args) {

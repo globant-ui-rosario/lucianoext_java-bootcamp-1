@@ -2,6 +2,7 @@ package Hospital;
 
 
 
+
 public class MentalAsylum extends Hospital {
 
 	private String warden;

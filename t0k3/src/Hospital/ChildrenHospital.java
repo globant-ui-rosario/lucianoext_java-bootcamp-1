@@ -1,7 +1,6 @@
 package Hospital;
 
 
-
 public class ChildrenHospital extends Hospital{
 	
 	private int ageLimit;

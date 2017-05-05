@@ -10,6 +10,7 @@ public class User {
 		this.psw=psw;
 	}
 
+	
 	public String getName() {
 		return name;
 	}

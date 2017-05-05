@@ -8,6 +8,5 @@ import user.User;
 public abstract class PayMethod {
 	public abstract double pay(Cart cart,User user);
 	
-	
-	
+		
 }

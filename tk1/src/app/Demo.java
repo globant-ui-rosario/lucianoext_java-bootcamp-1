@@ -17,7 +17,6 @@ public class Demo {
 		
 		Cart cart=new Cart();
 		
-				
 		cart.buy("001",1,shop);
 		cart.buy("005",2,shop);
 		cart.buy("008",1,shop);

@@ -9,8 +9,7 @@ import notification.MarketSubject;
 
 public class PaymentTransaction implements MarketSubject{
 	private static int counter=0;
-	private double total;
-	
+	private double total;	
 	private ArrayList<MarketObserver> marketObservers;
 	
 	public PaymentTransaction(){

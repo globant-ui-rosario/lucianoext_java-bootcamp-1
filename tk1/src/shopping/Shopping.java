@@ -15,8 +15,7 @@ public class Shopping implements MarketSubject{
 	private ArrayList<MarketObserver> marketObservers;
 	
 	public Shopping(){
-		marketObservers= new ArrayList<MarketObserver>();
-		
+		marketObservers= new ArrayList<MarketObserver>();		
 	}
 	
 	public void preset(){

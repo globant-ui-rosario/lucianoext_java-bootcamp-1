@@ -14,8 +14,7 @@ public class Cart {
 		item= shopping.searchItem(id);
 		if (item != null){
 			item.setCuantity(cant);
-			items.add(item);
-			
+			items.add(item);			
 		}
 	}
 	

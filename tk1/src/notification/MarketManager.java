@@ -10,8 +10,7 @@ public class MarketManager implements MarketObserver{
 
 	@Override
 	public void doUpdateNewItem(String name) {
-		System.out.println("the Market Manager has been notified that " +name +" has been added to stock");
-		
+		System.out.println("the Market Manager has been notified that " +name +" has been added to stock");		
 	}
 
 	@Override

@@ -6,5 +6,4 @@ public interface MarketObserver {
 	public void doUpdateNewItem(String name);
 
 	public void doUpdatePaymentTransaction(int counter);
-
 }

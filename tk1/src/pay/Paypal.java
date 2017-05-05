@@ -3,8 +3,7 @@ package pay;
 import shoppingCart.Cart;
 import user.User;
 
-public class Paypal extends PayMethod{
-	
+public class Paypal extends PayMethod{	
 	private String email,psw;
 
 	@Override

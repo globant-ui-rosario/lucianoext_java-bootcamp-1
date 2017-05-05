@@ -19,8 +19,7 @@ public class Item implements MarketSubject {
 		this.id=id;
 		this.name=name;
 		this.price=price;		
-		marketObservers= new ArrayList<MarketObserver>();
-	
+		marketObservers= new ArrayList<MarketObserver>();	
 	}
 
 	public Item(){

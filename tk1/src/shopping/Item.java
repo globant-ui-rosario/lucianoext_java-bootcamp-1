@@ -4,6 +4,7 @@ import notification.MarketSubject;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Iterator;
+import java.util.List;
 import java.util.Set;
 
 import notification.MarketObserver;;
@@ -11,9 +12,9 @@ public class Item implements MarketSubject {
 	protected String id;
 	protected String name;
 	protected double price;
-	protected int cuantity;
+	protected int quantity;
 	
-	private ArrayList<MarketObserver> marketObservers;
+	private List<MarketObserver> marketObservers;
 	
 	public Item(String id, String name, double price){
 		this.id=id;
@@ -26,20 +27,20 @@ public class Item implements MarketSubject {
 		id=null;
 		name=null;
 		price=0;
-		cuantity=0;
+		quantity=0;
 	}
 	
 	
 	
 	
 	public int getCuantity() {
-		return cuantity;
+		return quantity;
 	}
 
 
 
-	public void setCuantity(int cant) {
-		this.cuantity = cant;
+	public void setQuantity(int quantity) {
+		this.quantity = quantity;
 	}
 
 

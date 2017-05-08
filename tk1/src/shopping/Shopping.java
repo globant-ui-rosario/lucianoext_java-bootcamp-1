@@ -2,6 +2,7 @@ package shopping;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.List;
 import java.util.Set;
 
 import notification.MarketObserver;
@@ -12,7 +13,7 @@ public class Shopping implements MarketSubject{
 	
 	private ArrayList<Item> stock=new ArrayList<Item>();
 	private Item newItem=new Item();
-	private ArrayList<MarketObserver> marketObservers;
+	private List<MarketObserver> marketObservers;
 	
 	public Shopping(){
 		marketObservers= new ArrayList<MarketObserver>();		
@@ -20,7 +21,7 @@ public class Shopping implements MarketSubject{
 	
 	public void preset(){
 		
-		//creating items
+		
 		Item i1=new Item("001","ps4",200);
 		Item i2=new Item("002","xbox one",200);
 		Item i3=new Item("003","nitendo switch",299);
@@ -32,14 +33,14 @@ public class Shopping implements MarketSubject{
 		Item i9=new Item("009","Mass Effect Andromeda xbox one",60);
 		Item i10=new Item("010","Star wars knights of the old republic pc",10);
 		
-		//creating an offer
+		
 		Cart items1= new Cart();
 		items1.add(i7);
 		items1.add(i2);
 		Offer offer1=new Offer("011", "Lara Croft Pack", 220, items1);
 		
 		
-		//creating original stock
+		
 		stock.add(i1);
 		stock.add(i2);
 		stock.add(i3);

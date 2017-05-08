@@ -14,6 +14,8 @@ public class Demo {
 	public static void main(String[] args) {
 		Shopping shop=new Shopping();
 		shop.preset();
+		User user=new User("Magnus Mefisto ","555481328","magnus_mefisto@yahoo.com","password");
+		PayFactory payFactory=new PayFactory();
 		
 		Cart cart=new Cart();
 		
@@ -24,8 +26,7 @@ public class Demo {
 		cart.buy("010",1,shop);
 		cart.buy("011",1,shop);
 		
-		User user=new User("Magnus Mefisto ","555481328","magnus_mefisto@yahoo.com","password");
-		PayFactory payFactory=new PayFactory();
+		
 		PayMethod payMethod=payFactory.selectPayMethod("Cash");
 		
 		
@@ -39,6 +40,8 @@ public class Demo {
 		System.out.println(cart.list());
 		
 		paymentTransaction.showTotal();
+		
+		
 		shop.addObserver(manager);
 		shop.addItem(new Item("020","god of cacho",50));
 		

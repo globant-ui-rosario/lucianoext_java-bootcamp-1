@@ -2,6 +2,7 @@ package pay;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.List;
 import java.util.Set;
 
 import notification.MarketObserver;
@@ -10,7 +11,7 @@ import notification.MarketSubject;
 public class PaymentTransaction implements MarketSubject{
 	private static int counter=0;
 	private double total;	
-	private ArrayList<MarketObserver> marketObservers;
+	List<MarketObserver> marketObservers;
 	
 	public PaymentTransaction(){
 		counter++;
